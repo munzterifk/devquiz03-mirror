@@ -1,4 +1,4 @@
-# devquiz03
+# HTML &amp; CSS Challenge
 This is our technical challenge to assess your qualifications as a potential Jr. HTML & CSS Developer.
 
 ## Task: Build the UI with HTML5, CSS3 and Javascript.
