@@ -10,4 +10,4 @@ This is our technical challenge to assess your qualifications as a potential Jr.
 3. Responsive so the web app looks great on all screen sizes.
 4. Make your code as elegant as possible.
 
-All assets and UI mockup is uploaded here.
+All assets and UI mockup are uploaded here.
