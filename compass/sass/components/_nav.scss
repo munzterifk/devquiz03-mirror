@@ -1,0 +1,136 @@
+//  NAVIGATION COMPONENT
+
+nav {
+    padding: $l-size $m-size !important;
+    background: $white !important;
+    border-bottom: 1px solid #e8e7e7;
+    border-top: 1px solid #e8e7e7;
+
+    #logo {
+        max-width: 22.5rem;
+        width: 100%;
+        margin-right: 80px;
+
+        @include respond-to($lg-min, 1300px) {
+            margin-right: $l-size;
+        }
+
+        @include max($md-max) {
+            max-width: 13rem;
+        }
+    }
+
+    .collapse {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include max($md-max) {
+            flex-direction: column;
+        }
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+
+        @include max($md-max) {
+            width: 100%;
+            padding-top: $xl-size;
+            padding-bottom: $xl-size;
+        }
+
+        .nav-item {
+            margin-right: 6rem;
+            font-size: $text-m-size;
+            font-weight: 500;
+
+            @include respond-to($lg-min, 1300px) {
+                margin-right: 2.5rem;
+            }
+
+            @include max($md-max) {
+                margin-right: 0;
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid $white;
+                background: $lighter-gray;
+
+                &:hover {
+                    background: $lightest-gray;
+                }
+            }
+
+            > a {
+                cursor: pointer;
+                padding: 0 0 !important;
+
+                @include max($md-max) {
+                    display: block;
+                    text-align: center;
+                    padding-top: $s-size !important;
+                    padding-bottom: $s-size !important;
+                }
+            } 
+        }
+    }
+}
+
+
+
+.nav-timeline {
+    width: 53rem;
+    padding-right: 2rem;
+
+    @include max(1300px) {
+        width: auto;
+    }
+
+    @include max($md-max) {
+        width: 100%;
+        border-top: 1px solid $lighter-gray;
+        padding-top: $l-size;
+    }
+
+    .nav-timeline-inner-wrap {
+        display: flex;
+        flex-direction: column;
+
+        @include max($md-max) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .timeLineLabel {
+            font-weight: 800;
+        }
+
+        .progress-wrap {
+            display: flex;
+            align-items: center;
+
+            .progress {
+                margin-right: 2.5rem;
+                flex-grow: 1;
+
+                @include respond-to($lg-min, 1300px) {
+                    width: calc-vw-(2);
+                }
+
+                @include max($md-max) {
+                    display: none !important;
+                } 
+            }
+
+            .progress-text-display {
+                font-weight: 600;
+
+                @include respond-to($lg-min, 1300px) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+} 

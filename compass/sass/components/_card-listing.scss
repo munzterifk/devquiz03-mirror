@@ -1,0 +1,98 @@
+// CARD LISTING
+
+.card-listing {
+    padding-top: $m-size;
+    padding-bottom: $m-size;
+    margin-bottom: $l-size;
+
+    > .card-list-wrapper {
+        margin: 0 !important;
+        display: flex !important;
+        justify-content: space-between;
+
+        @include max($md-max) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.card-outer-wrap {
+    padding-left: 1.6rem !important;
+    padding-right: 1.6rem !important;
+    width: 33.33%;
+
+    @include max($md-max) {
+        width: 100%;
+        margin-bottom: $m-size;
+    }
+}
+.card {
+    border-radius: .7rem !important;
+    position: relative;
+    padding: 3.3rem;
+    padding-bottom: 5.5rem;
+    box-shadow: 2px 2px 3px 1px rgba(#333, .1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    .card-heading-icon {
+        width: 100%;
+        height: auto;
+        max-width: 5.5rem;
+        fill: $primary;
+    }
+
+    .card-heading-text {
+        margin-top: 3rem;
+        font-weight: 600;
+    }
+
+    .card-main {
+        height: 24rem;
+        min-height: 24rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .col-12 {
+            height: auto;
+            line-height: 1.2;
+        }
+
+        .bigtext {
+            font-weight: 600;
+        }
+    }
+
+    .btn {
+        min-width: 20rem;
+    }
+}
+
+.card-heading-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2.7rem;
+}
+
+.card-button-top-right {
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: all 600ms ease;
+
+    .dot3 {
+        fill: $primary !important;
+    }
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}

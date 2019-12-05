@@ -1,0 +1,124 @@
+// My Proposal
+
+.section-title-out {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+.my-proposals {
+    margin-bottom: 12rem;
+    .section-wrap {
+        .inner-wrap {
+            background: $lighter-gray;
+            border: 1px solid #e7e6e6;
+            border-radius: 1rem;
+            padding: 0;
+            overflow: hidden;
+            box-shadow: 2px 2px 3px 1px rgba(#333, .1);
+        }    
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 6rem 6rem;
+        border-bottom: 1px solid #d4d4d4;
+        
+        @include max($sm-max) {
+            padding: 4rem 4rem;
+        }
+    }
+
+    .section-heading-btn-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        @include max($sm-max) {
+            display: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: $lightest-gray;
+        }
+    }
+
+    .section-body {
+        border-top: 1px solid #fdfdfd;
+        display: flex;
+        justify-content: space-between;
+
+        @include max($md-max) {
+            flex-direction: column;
+        }
+
+        
+        @include max($sm-max) {
+            padding: 2rem 2rem;
+        }
+
+        .column-a {
+            padding: 5.5rem 7.3rem;
+            display: flex;
+            flex-direction: column;
+            width: calc-vw-(6);
+
+            @include max($md-max) {
+                width: 100%;
+            }
+
+            @include max($sm-max) {
+                padding: 2rem 2rem;
+            }
+
+
+            .text-wrap {
+                margin-bottom: 6.5rem;
+                line-height: 190%;
+                
+                @include min($lg-min) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .column-b {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include max($md-max) {
+                margin-bottom: 6.5rem;
+                margin-top: 5.5rem;
+            }
+
+            .content {
+                .bigtext {
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                .text {
+                    text-align: center;
+                    font-weight: 400;
+                    margin-bottom: $l-size;
+                }
+
+                .btn {
+                    background: $white;
+                    font-size: 2.5rem !important;
+                    padding: 3rem 8rem;
+                }
+            }
+        }
+    }
+}

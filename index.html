@@ -1,17 +1,306 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="compass/stylesheets/main.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <img id="logo" src="./assets/logo.svg" alt="govrnonce">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <title>HTML &amp; CSS Challenge</title>
-    <meta name="description" content="HTML &amp; CSS Challenge" />
-    <meta name="author" content="Digix Global" />
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">DASHBOARD <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ACCOUNT</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" >FAQ</a>
+                        </li>
+                    </ul>
+                    
 
-    <link rel="stylesheet" href="styles.css?v=1.0" />
-  </head>
+                    <div class="nav-timeline">
+                        <div class="nav-timeline-inner-wrap">
+                            <div class="timeLineLabel">TIMELINE</div>
+                            <div class="progress-wrap">
+                                <div class="progress d-flex">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress-text-display">10 of 90 days</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-  <body>
-    <!-- <script src="js/scripts.js"></script> -->
-  </body>
+
+
+
+        <!-- PROPOSAL COMPONENT -->
+        <div class="manageProposal container">
+            <div class="row col-12">
+                <div class="column-a col-auto">
+                    <div class="d-block section-title-large">
+                        <h1>hodl_godl_account</h1>
+                    </div>
+                    <div class="details ">
+                        <h4 class="row-title text-secondary">Badge Holder</h4>
+                        <div class="email-container">
+                            <div class="dot"></div>
+                            <div class="email-address">hodl.gold@somewhere.com</div>
+                            <div class="edit-email">
+                                    <svg fill="#9c9c9c" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.363 8.464l1.433 1.431-12.67 12.669-7.125 1.436 1.439-7.127 12.665-12.668 1.431 1.431-12.255 12.224-.726 3.584 3.584-.723 12.224-12.257zm-.056-8.464l-2.815 2.817 5.691 5.692 2.817-2.821-5.693-5.688zm-12.318 18.718l11.313-11.316-.705-.707-11.313 11.314.705.709z"/></svg>
+                                <a src="#" class="edit-email-link text-secondary">edit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-b col-auto">
+                    <a href="#" class="kyc btn btn-outline-red btn-lg">KYC Awaiting Approval</a>
+                    <a href="#" class="create-proposal btn btn-primary btn-lg"><svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>Create Proposal</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- CARD LISTING -->
+        <div class="card-listing container"> 
+            <div class=" card-list-wrapper col-12">
+                
+                <!-- 1st Card -->
+                <div class="card-outer-wrap">
+                    <div class="col-12 card border">
+                        <div class="row card-heading">
+                            <div class="col-12 card-heading-btn-wrap ">
+                                <div class="card-button-top-right">
+                                    <svg class="dot3" width="45px" height="11px" viewBox="0 0 38 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Desktop-HD-Copy" transform="translate(-558.000000, -484.000000)" fill="#C6C6C6" fill-rule="nonzero">
+                                                <path d="M558.506836,488.704102 C558.506836,487.420892 558.840817,486.436527 559.508789,485.750977 C560.176761,485.065426 561.143548,484.722656 562.40918,484.722656 C563.692389,484.722656 564.667965,485.07861 565.335938,485.790527 C566.00391,486.502445 566.337891,487.473627 566.337891,488.704102 C566.337891,489.952155 565.999515,490.940914 565.322754,491.67041 C564.645993,492.399906 563.674811,492.764648 562.40918,492.764648 C561.143548,492.764648 560.176761,492.4043 559.508789,491.683594 C558.840817,490.962887 558.506836,489.969733 558.506836,488.704102 Z M573.193359,488.704102 C573.193359,487.420892 573.52734,486.436527 574.195312,485.750977 C574.863285,485.065426 575.830072,484.722656 577.095703,484.722656 C578.378913,484.722656 579.354489,485.07861 580.022461,485.790527 C580.690433,486.502445 581.024414,487.473627 581.024414,488.704102 C581.024414,489.952155 580.686039,490.940914 580.009277,491.67041 C579.332516,492.399906 578.361334,492.764648 577.095703,492.764648 C575.830072,492.764648 574.863285,492.4043 574.195312,491.683594 C573.52734,490.962887 573.193359,489.969733 573.193359,488.704102 Z M587.879883,488.704102 C587.879883,487.420892 588.213864,486.436527 588.881836,485.750977 C589.549808,485.065426 590.516595,484.722656 591.782227,484.722656 C593.065436,484.722656 594.041012,485.07861 594.708984,485.790527 C595.376956,486.502445 595.710938,487.473627 595.710938,488.704102 C595.710938,489.952155 595.372562,490.940914 594.695801,491.67041 C594.01904,492.399906 593.047858,492.764648 591.782227,492.764648 C590.516595,492.764648 589.549808,492.4043 588.881836,491.683594 C588.213864,490.962887 587.879883,489.969733 587.879883,488.704102 Z" id="…"></path>
+                                            </g>
+                                        </g>
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                    <svg class="card-heading-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 21v3h3v-3h-1v-1h-1v1h-1zm2 1v1h-1v-1h1zm-23 2h8v-8h-8v8zm1-7h6v6h-6v-6zm20 3v-1h1v1h-1zm-19-2h4v4h-4v-4zm8-3v2h-1v-2h1zm2-8h1v1h-1v-1zm1-1h1v1h-1v-1zm1 2v-1h1v1h-1zm0-2h1v-6h-3v1h-3v1h3v1h2v3zm-1-4v-1h1v1h-1zm-7 4h-4v-4h4v4zm6 0h-1v-2h-2v-1h3v1h1v1h-1v1zm-4-6h-8v8h8v-8zm-1 7h-6v-6h6v6zm3 0h-1v-1h2v2h-1v-1zm-3 3v1h-1v-1h1zm15 6h2v3h-1v-1h-2v1h-1v-1h-1v-1h1v-1h1v1h1v-1zm-4 2h-1v1h-1v-1h-1v-1h1v-1h-2v-1h-1v1h-1v1h-2v1h-1v6h5v-1h-1v-2h-1v2h-2v-1h1v-1h-1v-1h3v-1h2v2h-1v1h1v2h1v-2h1v1h1v-1h1v-2h1v-1h-2v-1zm-1 3h-1v-1h1v1zm6-6v-2h1v2h-1zm-9 5v1h-1v-1h1zm5 3v-1h1v2h-2v-1h1zm-3-23v8h8v-8h-8zm7 7h-6v-6h6v6zm-1-1h-4v-4h4v4zm1 4h1v2h-1v1h-2v-4h1v2h1v-1zm-4 6v-3h1v3h-1zm-13-7v1h-2v1h1v1h-3v-1h1v-1h-2v1h-1v-2h6zm-1 4v-1h1v3h-1v-1h-1v1h-1v-1h-1v1h-2v-1h1v-1h4zm-4-1v1h-1v-1h1zm19-2h-1v-1h1v1zm-13 4h1v1h-1v-1zm15 2h-1v-1h1v1zm-5 1v-1h1v1h-1zm-1-1h1v-3h2v-1h1v-1h-1v-1h-2v-1h-1v1h-1v-1h-1v1h-1v-1h-1v1h-1v1h-1v-1h1v-1h-4v1h2v1h-2v1h1v2h1v-1h2v2h1v-4h1v2h3v1h-2v1h2v1zm1-5h1v1h-1v-1zm-2 1h-1v-1h1v1z"/></svg>
+                            </div>
+                            <div class="col-12 card-heading-text text-center">
+                                Connected Wallet
+                            </div>
+                        </div>
+
+                        <div class="col-12 card-main">
+                            <div class="wallet-code text-center">
+                                0x71C7656EC7ab88b
+                            </div>
+                            <div class="bigtext text-center">
+                                8 DGD
+                            </div>
+                            <div class="text-center ">BALANCE</div>
+                        </div>
+
+                        <div class="col-12 btn-wrap d-flex justify-content-center">
+                            <a href="#" class="btn btn-outline-primary thick btn-lg">BUY DGD</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- 2nd Card -->
+                <div class="card-outer-wrap">
+                    <div class="col-12 card border">
+                        <div class="row card-heading">
+                            <div class="col-12 card-heading-btn-wrap ">
+                                <div class="card-button-top-right">
+                                    <svg class="dot3" width="45px" height="11px" viewBox="0 0 38 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Desktop-HD-Copy" transform="translate(-558.000000, -484.000000)" fill="#C6C6C6" fill-rule="nonzero">
+                                                <path d="M558.506836,488.704102 C558.506836,487.420892 558.840817,486.436527 559.508789,485.750977 C560.176761,485.065426 561.143548,484.722656 562.40918,484.722656 C563.692389,484.722656 564.667965,485.07861 565.335938,485.790527 C566.00391,486.502445 566.337891,487.473627 566.337891,488.704102 C566.337891,489.952155 565.999515,490.940914 565.322754,491.67041 C564.645993,492.399906 563.674811,492.764648 562.40918,492.764648 C561.143548,492.764648 560.176761,492.4043 559.508789,491.683594 C558.840817,490.962887 558.506836,489.969733 558.506836,488.704102 Z M573.193359,488.704102 C573.193359,487.420892 573.52734,486.436527 574.195312,485.750977 C574.863285,485.065426 575.830072,484.722656 577.095703,484.722656 C578.378913,484.722656 579.354489,485.07861 580.022461,485.790527 C580.690433,486.502445 581.024414,487.473627 581.024414,488.704102 C581.024414,489.952155 580.686039,490.940914 580.009277,491.67041 C579.332516,492.399906 578.361334,492.764648 577.095703,492.764648 C575.830072,492.764648 574.863285,492.4043 574.195312,491.683594 C573.52734,490.962887 573.193359,489.969733 573.193359,488.704102 Z M587.879883,488.704102 C587.879883,487.420892 588.213864,486.436527 588.881836,485.750977 C589.549808,485.065426 590.516595,484.722656 591.782227,484.722656 C593.065436,484.722656 594.041012,485.07861 594.708984,485.790527 C595.376956,486.502445 595.710938,487.473627 595.710938,488.704102 C595.710938,489.952155 595.372562,490.940914 594.695801,491.67041 C594.01904,492.399906 593.047858,492.764648 591.782227,492.764648 C590.516595,492.764648 589.549808,492.4043 588.881836,491.683594 C588.213864,490.962887 587.879883,489.969733 587.879883,488.704102 Z" id="…"></path>
+                                            </g>
+                                        </g>
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                    <svg class="card-heading-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 24h-6v-6h6v6zm8-9h-6v9h6v-9zm8-4h-6v13h6v-13zm0-11l-6 1.221 1.716 1.708-6.85 6.733-3.001-3.002-7.841 7.797 1.41 1.418 6.427-6.39 2.991 2.993 8.28-8.137 1.667 1.66 1.201-6.001z"/></svg>
+                            </div>
+                            <div class="col-12 card-heading-text text-center">
+                                Partition Stats
+                            </div>
+                        </div>
+
+                        <div class="col-12 card-main">
+                            <div class="bigtext text-center">
+                                406.487
+                            </div>
+                            <div class="text-center ">VOTING STAKE</div>
+                        </div>
+
+                        <div class="col-12 btn-wrap d-flex justify-content-center">
+                            <a href="#" class="btn btn-outline-primary thick btn-lg">LOCK MORE DGD</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 3rd Card -->
+                <div class="card-outer-wrap">
+                    <div class="col-12 card border">
+                        <div class="row card-heading">
+                            <div class="col-12 card-heading-btn-wrap ">
+                                <div class="card-button-top-right">
+                                        <svg class="dot3" width="45px" height="11px" viewBox="0 0 38 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Desktop-HD-Copy" transform="translate(-558.000000, -484.000000)" fill="#C6C6C6" fill-rule="nonzero">
+                                                    <path d="M558.506836,488.704102 C558.506836,487.420892 558.840817,486.436527 559.508789,485.750977 C560.176761,485.065426 561.143548,484.722656 562.40918,484.722656 C563.692389,484.722656 564.667965,485.07861 565.335938,485.790527 C566.00391,486.502445 566.337891,487.473627 566.337891,488.704102 C566.337891,489.952155 565.999515,490.940914 565.322754,491.67041 C564.645993,492.399906 563.674811,492.764648 562.40918,492.764648 C561.143548,492.764648 560.176761,492.4043 559.508789,491.683594 C558.840817,490.962887 558.506836,489.969733 558.506836,488.704102 Z M573.193359,488.704102 C573.193359,487.420892 573.52734,486.436527 574.195312,485.750977 C574.863285,485.065426 575.830072,484.722656 577.095703,484.722656 C578.378913,484.722656 579.354489,485.07861 580.022461,485.790527 C580.690433,486.502445 581.024414,487.473627 581.024414,488.704102 C581.024414,489.952155 580.686039,490.940914 580.009277,491.67041 C579.332516,492.399906 578.361334,492.764648 577.095703,492.764648 C575.830072,492.764648 574.863285,492.4043 574.195312,491.683594 C573.52734,490.962887 573.193359,489.969733 573.193359,488.704102 Z M587.879883,488.704102 C587.879883,487.420892 588.213864,486.436527 588.881836,485.750977 C589.549808,485.065426 590.516595,484.722656 591.782227,484.722656 C593.065436,484.722656 594.041012,485.07861 594.708984,485.790527 C595.376956,486.502445 595.710938,487.473627 595.710938,488.704102 C595.710938,489.952155 595.372562,490.940914 594.695801,491.67041 C594.01904,492.399906 593.047858,492.764648 591.782227,492.764648 C590.516595,492.764648 589.549808,492.4043 588.881836,491.683594 C588.213864,490.962887 587.879883,489.969733 587.879883,488.704102 Z" id="…"></path>
+                                                </g>
+                                            </g>
+                                        </svg>  
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                    <svg class="card-heading-icon" class="card-heading-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 21v3h3v-3h-1v-1h-1v1h-1zm2 1v1h-1v-1h1zm-23 2h8v-8h-8v8zm1-7h6v6h-6v-6zm20 3v-1h1v1h-1zm-19-2h4v4h-4v-4zm8-3v2h-1v-2h1zm2-8h1v1h-1v-1zm1-1h1v1h-1v-1zm1 2v-1h1v1h-1zm0-2h1v-6h-3v1h-3v1h3v1h2v3zm-1-4v-1h1v1h-1zm-7 4h-4v-4h4v4zm6 0h-1v-2h-2v-1h3v1h1v1h-1v1zm-4-6h-8v8h8v-8zm-1 7h-6v-6h6v6zm3 0h-1v-1h2v2h-1v-1zm-3 3v1h-1v-1h1zm15 6h2v3h-1v-1h-2v1h-1v-1h-1v-1h1v-1h1v1h1v-1zm-4 2h-1v1h-1v-1h-1v-1h1v-1h-2v-1h-1v1h-1v1h-2v1h-1v6h5v-1h-1v-2h-1v2h-2v-1h1v-1h-1v-1h3v-1h2v2h-1v1h1v2h1v-2h1v1h1v-1h1v-2h1v-1h-2v-1zm-1 3h-1v-1h1v1zm6-6v-2h1v2h-1zm-9 5v1h-1v-1h1zm5 3v-1h1v2h-2v-1h1zm-3-23v8h8v-8h-8zm7 7h-6v-6h6v6zm-1-1h-4v-4h4v4zm1 4h1v2h-1v1h-2v-4h1v2h1v-1zm-4 6v-3h1v3h-1zm-13-7v1h-2v1h1v1h-3v-1h1v-1h-2v1h-1v-2h6zm-1 4v-1h1v3h-1v-1h-1v1h-1v-1h-1v1h-2v-1h1v-1h4zm-4-1v1h-1v-1h1zm19-2h-1v-1h1v1zm-13 4h1v1h-1v-1zm15 2h-1v-1h1v1zm-5 1v-1h1v1h-1zm-1-1h1v-3h2v-1h1v-1h-1v-1h-2v-1h-1v1h-1v-1h-1v1h-1v-1h-1v1h-1v1h-1v-1h1v-1h-4v1h2v1h-2v1h1v2h1v-1h2v2h1v-4h1v2h3v1h-2v1h2v1zm1-5h1v1h-1v-1zm-2 1h-1v-1h1v1z"/></svg>
+                                
+  
+                            </div>
+                            <div class="col-12 card-heading-text text-center">
+                                Participation Reward
+                            </div>
+                        </div>
+
+                        <div class="col-12 card-main">
+                            <div class="bigtext text-center">
+                                12 DGX
+                            </div>
+                            <div class="text-center ">UNCLAIMED REWARD</div>
+                        </div>
+
+                        <div class="col-12 btn-wrap d-flex justify-content-center">
+                            <a href="#" class="btn btn-outline-primary thick btn-lg">CLAIM REWARDS</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- GET PROPOSALS -->
+        <div class="my-proposals container mt-12">
+           <div class="col-12">
+               <div class="col-12 section-title-out">MY PROPOSALS</div>
+               
+               <div class="col-12 section-wrap">
+                    <div class="col-12 inner-wrap">
+                        <div class="section-heading">
+                            <div class="section-title">
+                                <div class="proposal-created text-muted">PROPOSAL CREATED <span class="text-secondary">Jan 20, 2019 </span></div>
+                                    <h2>Integration of DGX into Coinsource Network</h2>
+                                </div>
+
+                                <div class="section-heading-btn-wrap">
+                                    <svg class="dot big" width="48px" height="11px" viewBox="0 0 38 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Desktop-HD-Copy" transform="translate(-558.000000, -484.000000)" fill="#C6C6C6" fill-rule="nonzero">
+                                                <path d="M558.506836,488.704102 C558.506836,487.420892 558.840817,486.436527 559.508789,485.750977 C560.176761,485.065426 561.143548,484.722656 562.40918,484.722656 C563.692389,484.722656 564.667965,485.07861 565.335938,485.790527 C566.00391,486.502445 566.337891,487.473627 566.337891,488.704102 C566.337891,489.952155 565.999515,490.940914 565.322754,491.67041 C564.645993,492.399906 563.674811,492.764648 562.40918,492.764648 C561.143548,492.764648 560.176761,492.4043 559.508789,491.683594 C558.840817,490.962887 558.506836,489.969733 558.506836,488.704102 Z M573.193359,488.704102 C573.193359,487.420892 573.52734,486.436527 574.195312,485.750977 C574.863285,485.065426 575.830072,484.722656 577.095703,484.722656 C578.378913,484.722656 579.354489,485.07861 580.022461,485.790527 C580.690433,486.502445 581.024414,487.473627 581.024414,488.704102 C581.024414,489.952155 580.686039,490.940914 580.009277,491.67041 C579.332516,492.399906 578.361334,492.764648 577.095703,492.764648 C575.830072,492.764648 574.863285,492.4043 574.195312,491.683594 C573.52734,490.962887 573.193359,489.969733 573.193359,488.704102 Z M587.879883,488.704102 C587.879883,487.420892 588.213864,486.436527 588.881836,485.750977 C589.549808,485.065426 590.516595,484.722656 591.782227,484.722656 C593.065436,484.722656 594.041012,485.07861 594.708984,485.790527 C595.376956,486.502445 595.710938,487.473627 595.710938,488.704102 C595.710938,489.952155 595.372562,490.940914 594.695801,491.67041 C594.01904,492.399906 593.047858,492.764648 591.782227,492.764648 C590.516595,492.764648 589.549808,492.4043 588.881836,491.683594 C588.213864,490.962887 587.879883,489.969733 587.879883,488.704102 Z" id="…"></path>
+                                            </g>
+                                        </g>
+                                    </svg>  
+                                </div>
+                        </div>
+                        <div class="section-body">
+                            <div class="column-a">
+                                <div class="text-wrap ">
+                                    Coinsource offers the fastest, easiest and most secure way to purchase Bitcoin with cash. We offer a remote enrollment feature which allows our customers to create their Coinsource account at home of on the go, greatly reducing the time needed at the physical ATM.
+                                </div>
+                                <div class="col-12 p-0">
+                                    <button class="btn btn-primary btn-lg expand-md">Mark Milestone 1 Complete</button>
+                                    <button class="btn btn-outline-primary btn-lg expand-md">Add New Milestone</button>
+                                </div>
+                            </div>
+
+                            <div class="column-b">
+                                <div class="content">
+                                    <div class="bigtext">18 days</div>
+                                    <h5 class="text">until target delivery</h5>
+                                    <button class="btn btn-rounded btn-lg">$24 ETH <span class="thin">FUNDING</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+
+
+        <!-- SAVED PROPOSALS -->
+        <div class="saved-proposals container mt-12">
+                <div class="col-12">
+                    <div class="col-12 section-title-out mb-0">SAVED PROPOSALS</div>
+                    
+                    <div class="col-12">
+                        <table class="table table-borderless table-responsive-lg custom-table">
+                            <thead>
+                                <tr>
+                                <th  scope="col"></th>
+                                <th  class="text-center pb-5" scope="col">FUNDING</th>
+                                <th  class="text-center pb-5" scope="col">MILESTONE</th>
+                                <th  class="text-center pb-5" scope="col">REWARD</th>
+                                <th  class="text-center pb-5" scope="col">STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"> <span class="spacer row-head">  Lock DGX in SMart contracts and lend out money</span></th>
+                                    <td class="text-center"> <span class="spacer">  15 ETH <span class="text-secondary">(+2)</span></span> </td>
+                                    <td class="text-center"> <span class="spacer"> 2</span></td>
+                                    <td class="text-center"> <span class="spacer"> 2 ETH</span></td>
+                                    <td class="text-center"> <span class="spacer row-tail"> DRAFT</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> <span class="spacer row-head"> Minting physical DGX branded Coins</span></th>
+                                    <td class="text-center"> <span class="spacer"> 10 ETH </span></td>
+                                    <td class="text-center"> <span class="spacer">2 </span></td>
+                                    <td class="text-center"> <span class="spacer"> 3 ETH </span></td>
+                                    <td class="text-center"> <span class="spacer"> IDEA </span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> <span class="spacer row-head"> Best T Shirt Design Contest </span></th>
+                                    <td class="text-center"> <span class="spacer"> 9 ETH <span class="text-secondary">(+5)</span></span></td>
+                                    <td class="text-center"> <span class="spacer"> 2 </span></td>
+                                    <td class="text-center"> <span class="spacer"> 0 ETH </span></td>
+                                    <td class="text-center"> <span class="spacer"> ONGOING  </span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+             </div>
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>

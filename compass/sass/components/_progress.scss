@@ -1,0 +1,14 @@
+// bootstrap progress
+.progress-wrap {
+    .progress {
+        border-radius: 10px;
+        background: $gray2;
+        height: 10px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        border-radius: 10px;
+        background: $primary;
+    }
+}

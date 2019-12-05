@@ -1,0 +1,21 @@
+@function calc-vw-($column) {
+	@return $column/12 * 100vw;
+}
+
+@mixin respond-to($min-media, $max-media) {
+	@media (min-width: $min-media) and (max-width: $max-media) {
+		@content;
+	}
+}
+
+@mixin min($min-media) {
+	@media (min-width: $min-media) {
+		@content;
+	}
+}
+
+@mixin max($max-media) {
+	@media (max-width: $max-media) {
+		@content;
+	}
+}

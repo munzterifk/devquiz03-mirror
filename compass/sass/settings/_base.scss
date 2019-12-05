@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+
+    @include max(991px) {
+        font-size: 45%;
+    }
+}
+
+body {
+    font-family: $font-open-sans;
+    font-size: $text-m-size;
+    background: $lightest-gray;
+    color: $default;
+    line-height: $base-line-height;
+}
+
+a:hover {
+    cursor:pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active {
+    font-weight: bold;
+}
+
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: $h1-size;
+
+    @include max($md-max) {
+        font-size: $h1-md-size;
+    }
+}
+
+h2 {
+    font-size: $h2-size;
+
+    @include max($md-max) {
+        font-size: $h2-md-size;
+    }
+}
+
+h3 {
+    font-size: $h3-size;
+
+    @include max($md-max) {
+        font-size: $h3-md-size;
+    }
+}
+
+h4 {
+    font-size: $h4-size;
+
+    @include max($md-max) {
+        font-size: $h4-md-size;
+    }
+}
+
+h5 {
+    font-size: $h5-size;
+}
+
+h6 {
+    font-size: $h6-size;
+}

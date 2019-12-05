@@ -1,0 +1,146 @@
+.container {
+    max-width: 168.0rem !important;
+    padding: 0 !important;
+}
+
+
+// Navigation bar
+nav {
+    .container {
+        max-width: 168.0rem !important;
+        padding: 0 !important;
+    }
+}
+
+
+// Typography
+.text-muted {
+    color: $muted;
+}
+.text-primary {
+    color: $primary;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+.bigtext {
+    font-size: $h1-size;
+
+    @include max($md-max) {
+        font-size: $h1-md-size;
+    }
+}
+
+.thin {
+    font-weight: 400;
+}
+
+
+
+
+.btn {
+    font-size: 100% !important;
+    color: $white !important;
+    border-radius: .7rem;
+    transition: all 600ms ease;
+    font-weight: 700;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.btn-primary {
+    background: $primary;
+    border-color: $primary;
+
+    svg {
+        transition: all 600ms ease;
+    }
+
+    &:hover {
+        background: transparent;
+        border-color: $primary;
+        color: $primary !important;
+
+       svg {
+           fill: $primary;
+        }
+    }
+}
+
+.btn-outline-primary {
+    border-color: $primary !important;
+    color: $primary !important;
+
+    &:hover {
+        background: $primary;
+        color: $white !important;
+    }
+
+    &.thick {
+        border: 3px solid $primary !important;
+
+        &:hover {
+            border: 3px solid $primary !important;
+        }
+    }
+}
+
+.btn-rounded {
+    border: 1px solid $light-gray;
+    border-radius: 10rem !important;
+    color: $default !important;
+
+    &:hover {
+        border-color: $primary !important;
+        background: $primary !important;
+        color: $white !important;
+    }
+}
+
+.btn-outline-red {
+    background: transparent;
+    border-color: $red;
+    color: $red !important;
+
+    &:hover {
+        background: $red;
+        color: $white !important;
+    }
+}
+
+.btn-block {
+    margin-bottom: $s-size;
+}
+
+.btn-lg {
+    padding: 2rem 2.8rem;
+}
+
+.expand-md {
+    @include max($sm-max) {
+        display: block;
+        width: 100%;
+        min-width: 100% !important;
+    }
+}
+
+
+
+// spacing
+.mt-12 {
+    margin-top: 12rem;
+}
+
+.mb-12 {
+    margin-bottom: 12rem;
+}
+
+.pt-12 {
+    padding-top: 12rem;
+}
+
+.pb-12 {
+    padding-bottom: 12rem;
+}
